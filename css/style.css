@@ -218,6 +218,36 @@ main {
     margin-top: 10px;
 }
 
+.main-search {
+    width: 911px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.search {
+    float: left;
+    height: 133px;
+    background: #fff;
+    border: 1px solid #9c9c9d;
+    margin-bottom: 8px;
+    border-radius: 18px;
+}
+
+.search-auto {
+    width: 414px;
+    margin-left: 5px;
+}
+
+.search-disk {
+    width: 266px;
+    margin-left: 9px;
+}
+
+.search-bus {
+    width: 192px;
+    margin-left: 13px;
+}
+
 .catalog {
     width: 191px;
     float: left;
