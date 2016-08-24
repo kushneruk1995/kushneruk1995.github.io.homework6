@@ -1,517 +1,366 @@
+@font-face {
+    font-family: Lucida; /* Гарнитура шрифта */
+    src: url(../fonts/Lucida-Sans.ttf);
+} 
+
 header {
-    display: block;
-    width: 925px;
+    width: 911px;
     margin: 0 auto;
-    padding-top: 23px;
+    padding-top: 18px;
 }
 
-header div {
-    display: inline-block;
-    position: relative;
-    width: auto;
-    margin-right: 20px;
+.telephone::before {
+    width: 22px;
+    height: 22px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -179px;
     float: left;
+    margin-right: 5px;
 }
 
-.telephone> img {
-    margin-top: -1px;
-    margin-left: 4px;
+header p {
     float: left;
-}
-
-.telephone> span {
-    display: inline;
-    margin-left: 6px;
+    margin-left: 7px;
     color: #737c80;
     font-family: Arial;
     font-size: 18px;
     letter-spacing: .25px;
+    margin-top: 5px;
 }
 
-.authorization {
-    width: auto;
-    margin-top: -6px;
-    margin-left: -6px;
-    padding: 2px;
+header form::before {
+    width: 17px;
+    height: 19px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -48px;
+    float: left;
+    margin-right: 1px;
+}
+
+header form {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 10.91px;
+    padding: 3px 0 5px 6px;;
     border-radius: 3px;
     background-color: #0f3b5f;
-}
-
-.authorization >img {
-    margin-top: 3px;
-    margin-left: 5px;
     float: left;
 }
 
-.authorization form {
-    display: inline-block;
-    margin-left: 3px;
-    font-family: Lucida;
-    font-size: 10.91px;
-}
-
-.authorization .input-login {
-    width: 109px;
-    height: 11px;
+header form .input-login {
+    width: 107px;
+    height: 14px;
     padding-left: 2px;
 }
 
-.authorization .input-password {
-    width: 106px;
-    height: 11px;
-    margin-left: 3px;
-    padding-left: 2px;
+header form .input-password {
+    width: 107px;
+    height: 14px;
+    margin-left: 4px;
+    padding-left: 5px;
 }
 
-.authorization>.log-in {
-    margin: 5px;
+header form .log-in {
+    margin: 4px;
     margin-right: 0;
     padding-right: 4px;
     border-right: 1px solid #bfcbd5;
     color: #fff;
     font-family: Lucida;
     font-size: 10.91px;
-    text-decoration: none;
 }
 
-.authorization>.registration {
+header form .registration {
     color: #fff;
     font-family: Lucida;
     font-size: 10.91px;
-    text-decoration: none;
 }
 
-.authorization>.forgot-password {
-    margin-left: 14px;
-    padding-right: 9px;
+header form .forgot-password {
+    margin-left: 16px;
+    padding-right: 10px;
     color: #bfbfbf;
     font-family: Lucida;
     font-size: 12px;
+    text-decoration: underline;
 }
 
 .navigation {
-    position: relative;
-    width: 74px;
-    margin-top: -5px;
-    margin-left: -2px;
+    float: left;
+    margin-top: 4x;
+    margin-left: 18px;
     padding-bottom: 3px;
     border: 1px solid #808080;
     border-radius: 12px;
 }
 
-.navigation>img {
-    padding: 3px 5px 7px;
+.navigation a {
+    width: 12px;
+    height: 12px;
     float: left;
+    margin: 4px 5px 1px 6px;
+    background: url('../img/sprite.png') no-repeat;
 }
 
 .navigation .home-button {
-    padding-left: 7px;
+    background-position: 0px -27px;
+    margin-left: 8px;
+    margin-top: 4px;
 }
 
 .navigation .site-map {
-    padding-left: 3px;
+    background-position: 0px -159px;
+    margin-left: 3px;
 }
 
 .navigation .letter {
-    padding-top: 5px;
-    padding-left: 6px;
+    background-position: 0px -76px;
+    margin-right: 11px;
 }
 
-header>img {
-    margin-top: 11px;
-    margin-left: -2px;
+header img {
+    margin-top: 8px;
+    margin-left: 1px;
 }
 
 nav {
-    width: 908px;
-    margin-left: -3px;
-    padding: 0;
-    border-radius: 3px;
-    background: -moz-linear-gradient(top, #45484d 0%, #000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #45484d 0%, #000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #45484d 0%, #000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 911px;
+    margin: 0 auto;
+    margin-top: 3px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #45484d 0%, #000 100%); 
 }
 
 nav ul {
+    display: inline-block;
     margin: 2px;
-    padding: 0;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
+    padding-left: 126px;
 }
 
 nav ul li {
     display: inline-block;
-    position: relative;
     color: #b1bcc0;
 }
 
 nav li a {
     display: block;
-    position: relative;
     color: #b1bcc0;
     font-family: Lucida;
     font-size: 13.64px;
-    text-decoration: none;
     text-transform: uppercase;
-}
-
-.main-menu>li:nth-child(1)>a {
-    position: relative;
+    padding: 0 19px 0px 19px;
     margin-top: 5px;
-    margin-left: 125px;
-    padding: 0 17px 0 20px;
 }
 
-.main-menu>li:nth-child(2)>a {
-    padding: 0 14px;
+nav .payment {
+    padding: 0 12px 0px 12px;
 }
 
-.main-menu>li:nth-child(3)>a {
-    padding: 0 11px;
+nav .delivery {
+    padding: 0 13px 0px 13px;
 }
 
-.main-menu>li:nth-child(4)>a {
-    padding: 0 15px;
+nav .articles {
+    padding: 0 13px 0px 13px;
 }
 
-.main-menu>li:nth-child(5)>a {
-    padding: 0 6px;
+nav .contacts {
+    padding: 0 8px 0px 8px;
 }
 
-.main-menu>li:nth-child(6) {
-    width: 232px;
-    margin-left: 51px;
-    font-size: 11px;
-}
-
-.main-menu>li:nth-child(6)>p {
-    display: inline;
-    margin-left: 10px;
-    padding-top: 0;
-}
-
-.main-menu>li>a:hover {
+.main-menu a:hover {
     border-radius: 11px;
     background-color: #13486b;
     color: #fff;
 }
 
-.main-menu .img-basket {
-    position: relative;
-    margin: -3px 0 0 8px;
-    float: left;
+nav .img-basket {
+    margin: 8px 4px 0 0px;
+    content: ".";
+    float: right;
+    width: 23px;
+    height: 18px;
+    background: url("../img/sprite.png");
+    background-position: 0px 0px; 
 }
 
-.label-ware {
+nav p {
+    float: right;
     font-family: Arial;
     font-size: 11px;
+    color: #929b9f;
+    margin-right: 13px;
+    letter-spacing: 0.6px;
+    margin-top: 9px;
+    display: inline;
+}
+
+nav p span {
+    font-size: 12px;
+    color: #0d5a8f;
 }
 
 .quantity-ware {
     margin-left: 2px;
-    color: #0d5a8f;
-    font-size: 12px;
-}
-
-.sum {
-    margin-left: 15px;
-    font-family: Arial;
-    font-size: 11px;
+    margin-right: 14px;
 }
 
 .sum-in-uah {
-    margin-left: 12px;
-    color: #0d5a8f;
-    font-family: Arial;
-    font-size: 13px;
+    margin-left: 8px;
 }
 
 main {
-    position: relative;
+    width: 911px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .catalog {
-    position: relative;
-    width: 234px;
-    height: auto;
-    margin-left: 177px;
+    width: 191px;
     float: left;
+    margin-top: 10px;
 }
 
-.catalog> ul> li {
-    position: relative;
-    list-style: none;
+.catalog-products::before {
+    width: 21px;
+    height: 21px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -128px;
+    float: left;
+    margin-right: 5px;
+    margin-left: -5px;
 }
 
-.catalog> ul> li:nth-child(1) {
-    width: 180px;
-    margin-left: 0;
-    padding-top: 2px;
-    padding-bottom: 1px;
+.catalog-products {
+    width: 171px;
+    padding: 1px 2px 0px 7px;
     border: 1px solid #91999d;
     border-radius: 11px;
-    font-family: Lucida;
-    font-size: 12.73px;
-    text-transform: uppercase;
-}
-
-.catalog-products>img {
-    display: inline-block;
-    position: absolute;
-    margin-top: -2px;
-    margin-left: 2px;
-}
-
-.catalog-products>p {
-    display: inline;
-    padding-left: 28px;
     color: #114165;
     font-family: Lucida;
     font-size: 12.73px;
+    text-transform: uppercase;
 }
 
-.catalog> ul> li:nth-child(2) {
-    margin-top: 16px;
+.catalog-products p {
+    margin: 2px 2px 2px 0px;
 }
 
-.catalog .catalog-bus>span {
+.catalog-bus {
+    margin-top: 13px;
+}
+
+.catalog-bus span::before {
+    width: 23px;
+    height: 23px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -95px;
+    float: left;
+    margin-right: 1px;
+    margin-left: 3px
+}
+
+.catalog-bus span {
     display: inline-block;
-    position: relative;
-    width: 133px;
-    margin-top: -2px;
-    margin-left: 2px;
-    padding-left: 15px;
+    width: 146px;
     border: 1px solid #91999d;
     border-radius: 11px;
     font-family: Lucida;
     font-size: 14px;
     text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-left: 3px;
 }
 
-.catalog-bus>span>img {
-    position: absolute;
-    margin-top: 1px;
-    margin-left: -11px;
+.catalog-bus p {
+    margin: 3px 0 0 0;
 }
 
-.catalog-bus>span>p {
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 13px;
+.catalog-disk {
+    margin-top: -7px;
 }
 
-.submenu-bus>li {
-    margin-left: 15px;
+.catalog-disk span::before {
+    width: 23px;
+    height: 23px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -95px;
+    float: left;
+    margin-right: 1px;
+    margin-left: 3px;
 }
 
-.submenu-bus>li>a {
-    display: block;
-    color: #465961;
-    font-family: Lucida;
-    font-size: 12.73px;
-    text-decoration: none;
-}
-
-.submenu-bus>li:nth-child(1) {
-    margin-top: 3px;
-}
-
-.submenu-bus>li:nth-child(1)>a {
-    margin-left: -8px;
-}
-
-.submenu-bus>li:nth-child(2) {
-    margin-top: 5px;
-}
-
-.submenu-bus>li:nth-child(2)>a {
-    margin-left: -7px;
-}
-
-.submenu-bus>li:nth-child(3) {
-    margin-top: 5px;
-}
-
-.submenu-bus>li:nth-child(3)>a {
-    margin-left: -8px;
-}
-
-.submenu-bus>li:nth-child(4) {
-    margin-top: 7px;
-}
-
-.submenu-bus>li:nth-child(4)>a {
-    margin-left: -8px;
-}
-
-.submenu-bus>li>a:hover {
-    color: #0c3256;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.disk {
-    margin-top: 1px;
-}
-
-.disk>span {
+.catalog-disk span {
     display: inline-block;
-    position: relative;
-    width: 133px;
-    margin-top: -2px;
-    margin-left: 2px;
-    padding-left: 15px;
+    width: 146px;
     border: 1px solid #91999d;
     border-radius: 11px;
     font-family: Lucida;
     font-size: 14px;
     text-transform: uppercase;
-}
-
-.disk>span>img {
-    position: absolute;
-    margin-top: 1px;
-    margin-left: -11px;
-}
-
-.disk>span>p {
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 13px;
-}
-
-.submenu-disk>li {
-    margin-left: 15px;
-}
-
-.submenu-disk>li >a {
-    display: block;
-    color: #465961;
-    font-family: Lucida;
-    font-size: 12.73px;
-    text-decoration: none;
-}
-
-.submenu-disk>li:nth-child(1) {
-    margin-top: 3px;
-}
-
-.submenu-disk>li:nth-child(1)>a {
-    margin-left: -8px;
-}
-
-.submenu-disk>li:nth-child(2) {
-    margin-top: 5px;
-}
-
-.submenu-disk>li:nth-child(2)>a {
-    margin-left: -8px;
-}
-
-.submenu-disk>li:nth-child(3) {
-    margin-top: 5px;
-}
-
-.submenu-disk>li:nth-child(3)>a {
-    margin-left: -8px;
-}
-
-.submenu-disk>li:nth-child(4) {
-    margin-top: 7px;
-}
-
-.submenu-disk>li:nth-child(4)>a {
-    margin-left: -8px;
-}
-
-.submenu-disk>li>a:hover {
-    color: #0c3256;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.bolt {
+    padding-bottom: 1px;
+    margin-left: 3px;
     margin-top: 1px;
 }
 
-.bolt>span {
+.catalog-disk p {
+    margin: 3px 0 0 0;
+}
+
+.catalog-bolt {
+    margin-top: -7px;
+}
+
+.catalog-bolt span::before {
+    width: 23px;
+    height: 23px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -95px;
+    float: left;
+    margin-right: 1px;
+    margin-left: 3px;
+}
+
+.catalog-bolt span {
     display: inline-block;
-    position: relative;
-    width: 133px;
-    margin-top: -2px;
-    margin-left: 2px;
-    padding-left: 15px;
+    width: 146px;
     border: 1px solid #91999d;
     border-radius: 11px;
     font-family: Lucida;
     font-size: 14px;
     text-transform: uppercase;
-}
-
-.bolt>span>img {
-    position: absolute;
+    padding-bottom: 1px;
+    margin-left: 3px;
     margin-top: 1px;
-    margin-left: -11px;
 }
 
-.bolt>span>p {
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 13px;
+.catalog-bolt p {
+    margin: 3px 0 0 0;
 }
 
-.bolt>li {
-    margin-left: 15px;
+.submenu li {
+    list-style-type: circle;
+    margin-left: 55px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    margin-left: 55px;
 }
 
-.submenu-bolt>li >a {
-    display: block;
+.submenu li a {
     color: #465961;
     font-family: Lucida;
     font-size: 12.73px;
-    text-decoration: none;
+    margin-left: -8px;
 }
 
-.submenu-bolt>li:nth-child(1) {
-    margin-top: 4px;
-    margin-left: 14px;
-}
-
-.submenu-bolt>li:nth-child(1)>a {
-    margin-left: -7px;
-}
-
-.submenu-bolt>li:nth-child(2) {
-    margin-top: 5px;
-    margin-left: 14px;
-}
-
-.submenu-bolt>li:nth-child(2)>a {
-    margin-left: -7px;
-}
-
-.submenu-bolt>li:nth-child(3) {
-    margin-top: 5px;
-    margin-left: 14px;
-}
-
-.submenu-bolt>li:nth-child(3)>a {
-    margin-left: -7px;
-}
-
-.submenu-bolt>li:nth-child(4) {
-    margin-top: 7px;
-    margin-left: 14px;
-}
-
-.submenu-bolt>li:nth-child(4)>a {
-    margin-left: -7px;
-}
-
-.submenu-bolt>li>a:hover {
+.submenu a:hover {
     color: #0c3256;
     font-size: 14px;
     font-style: italic;
@@ -520,98 +369,63 @@ main {
 }
 
 .content {
-    position: relative;
     width: 525px;
-    height: auto;
-    margin-top: 13px;
+    margin-top: 7px;
     float: left;
     background: #d9dfe1;
+    padding-bottom: 21px;
 }
 
-.ware {
-    margin: 0;
-    padding: 0;
-}
-
-.ware>li {
+.content ul li {
     display: inline-block;
-    list-style: none;
 }
-
-.ware>li:nth-child(3n+1) {
-    margin-bottom: 12px;
-}
-
 .ware-goodyear {
-    display: inline-block;
-    margin: 0;
-    margin-left: 22px;
+    margin-left: 23px;
 }
 
-.ware-goodyear>img {
-    margin-top: 5px;
-    margin-left: -2px;
+.content .brand-goodyear {
+    margin-top: 10px;
+    text-align: center;
+    color: #206987;
+    font-family: Lucida;
+    font-size: 14.59px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.content .kind-goodyear {
+    font-family: Lucida;
+    font-size: 12.77px;
+    margin-top: -7px;
+    margin-left: 14px;
+}
+
+.ware-goodyear img {
     padding: 5px 33px 5px 30px;
     border: 1px solid #adb6b9;
     border-radius: 10px;
     background: #fff;
+    margin-top: -3px;
 }
 
-.ware-goodyear>figcaption {
-    margin-top: 10px;
-    margin-left: 32px;
-    color: #206987;
-    font-family: Lucida;
-    font-size: 14.59px;
-    font-weight: bold;
-    letter-spacing: .5px;
-}
-
-.ware-goodyear>p {
-    margin-top: -7px;
-    margin-right: -4px;
-    margin-bottom: -9px;
-    font-family: Lucida;
-    font-size: 12.77px;
-    letter-spacing: px;
-    text-align: center;
-}
-
-.ware>li:nth-child(3n+1) .price {
-    display: block;
-    margin-top: -1px;
-    margin-left: 36px;
-    color: #114165;
+.content .ware-goodyear p {
     font-family: Arial;
     font-size: 16px;
     font-style: italic;
     font-weight: bold;
+    color: #114165;
+    margin-top: -2px;
+    margin-left: 39px;
 }
 
-.price>p {
-    display: inline;
-    margin-left: 4px;
+.ware-goodyear p span {
     font-size: 12px;
+    margin-left: 3px;
 }
 
-.ware .ware-nokian {
-    display: inline-block;
-    margin: 0;
-    margin-left: 22px;
-}
-
-.ware .ware-nokian>img {
-    margin-top: 5px;
-    margin-left: 2px;
-    padding: 4px 35px 5px 34px;
-    border: 1px solid #adb6b9;
-    border-radius: 10px;
-    background: #fff;
-}
-
-.ware .ware-nokian>figcaption {
+.ware-nokian .brand-nokian {
     margin-top: 10px;
-    margin-left: 48px;
+    margin-left: 45px;
     color: #206987;
     font-family: Lucida;
     font-size: 14.59px;
@@ -619,44 +433,39 @@ main {
     letter-spacing: .5px;
 }
 
-.ware .ware-nokian>p {
-    margin-top: -7px;
-    margin-right: -7px;
-    margin-bottom: -9px;
+.content .kind-nokian {
     font-family: Lucida;
     font-size: 12.77px;
-    text-align: center;
+    margin-top: -7px;
+    margin-left: 24px;
 }
 
-.ware>li:nth-child(3n+2) .price {
-    display: block;
-    margin-top: -1px;
-    margin-left: 37px;
-    color: #114165;
+.ware-nokian img {
+    padding: 5px 35px 5px 33px;
+    border: 1px solid #adb6b9;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: -3px;
+}
+
+.content .ware-nokian p {
     font-family: Arial;
     font-size: 16px;
     font-style: italic;
     font-weight: bold;
+    color: #114165;
+    margin-top: -1px;
+    margin-left: 34px;
 }
 
-.ware .ware-hankook {
-    display: inline-block;
-    margin: 0;
-    margin-left: 22px;
+.ware-nokian p span {
+    font-size: 12px;
+    margin-left: 5px;
 }
 
-.ware .ware-hankook>img {
-    margin-top: 5px;
-    margin-left: 2px;
-    padding: 4px 31px 5px 27px;
-    border: 1px solid #adb6b9;
-    border-radius: 10px;
-    background: #fff;
-}
-
-.ware .ware-hankook>figcaption {
+.ware-hankook .brand-hankook {
     margin-top: 10px;
-    margin-left: 41px;
+    margin-left: 38px;
     color: #206987;
     font-family: Lucida;
     font-size: 14.59px;
@@ -664,291 +473,164 @@ main {
     letter-spacing: .5px;
 }
 
-.ware-hankook>p {
-    margin-top: -7px;
-    margin-right: -2px;
-    margin-bottom: -9px;
+.content .kind-hankook {
     font-family: Lucida;
     font-size: 12.77px;
-    text-align: center;
+    margin-top: -7px;
+    margin-left: 10px;
 }
 
-.ware>li:nth-child(3n+3) .price {
-    display: block;
-    margin-top: -1px;
-    margin-left: 36px;
-    color: #114165;
+.ware-hankook img {
+    padding: 5px 30px 4px 28px;
+    border: 1px solid #adb6b9;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: -3px;
+}
+
+.content .ware-hankook p {
     font-family: Arial;
     font-size: 16px;
     font-style: italic;
     font-weight: bold;
+    color: #114165;
+    margin-top: -1px;
+    margin-left: 35px;
 }
 
-.ware>li:nth-child(4) {
-    margin-bottom: 12px;
-}
-
-.ware .ware-goodyear2>figcaption {
-    margin-top: 9px;
-}
-
-.ware .ware-nokian2>figcaption {
-    position: absolute;
-    margin-top: -29px;
-    margin-left: 47px;
-}
-
-.ware .ware-nokian2>p {
-    position: absolute;
-    margin-top: -14px;
-    margin-left: 26px;
-}
-
-.ware .ware-nokian2>img {
-    margin-top: 5px;
-    padding-top: 2px;
-    padding-bottom: 8px;
-}
-
-.ware .ware-hankook2>figcaption {
-    position: absolute;
-    margin-top: -29px;
-}
-
-.ware .ware-hankook2>p {
-    position: absolute;
-    margin-top: -14px;
-    margin-left: 14px;
-}
-
-.ware>li:nth-child(7) {
-    margin-bottom: 26px;
-}
-
-.ware .ware-goodyear3>figcaption {
-    margin-top: 0;
-    margin-left: 31px;
-}
-
-.ware .ware-goodyear3>p {
-    margin-left: -3px;
-}
-
-.ware .ware-nokian3>p {
-    margin-top: -7px;
+.ware-hankook p span {
+    font-size: 12px;
+    margin-left: 4px;
 }
 
 .choose-brand {
-    position: relative;
-    width: 234px;
-    height: auto;
-    margin-left: 0;
+    width: 185px;
     float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.brand-ware::before {
+    width: 21px;
+    height: 21px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -128px;
+    float: left;
+    margin-right: 6px;
+    margin-left: -4px;
 }
 
 .brand-ware {
-    margin: 0;
-    padding: 0;
-}
-
-.brand-ware> li {
-    position: relative;
-    list-style: none;
-}
-
-.brand-ware> li:nth-child(1) {
-    width: 180px;
-    margin-top: 14px;
-    margin-left: 9px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    width: 171px;
+    padding: 1px 3px 3px 8px;
     border: 1px solid #91999d;
-    border-radius: 11px;
-    font-family: Lucida;
-    font-size: 12.73px;
-    text-transform: uppercase;
-}
-
-.brand-ware> li:nth-child(1)>img {
-    display: inline-block;
-    position: absolute;
-    margin-top: -1px;
-    margin-left: 2px;
-}
-
-.brand-ware> li:nth-child(1)>p {
-    display: inline;
-    padding-left: 30px;
+    border-radius: 13px;
     color: #114165;
-    font-family: Lucida;
-    font-size: 12.73px;
-    letter-spacing: .5px;
-}
-
-.brand-ware> li:nth-child(2) {
-    margin-top: 16px;
-    margin-left: 21px;
-}
-
-.brand-ware> li:nth-child(2)>ul {
-    margin: 0;
-    margin-top: 6px;
-    margin-left: 11px;
-    padding: 0;
-    list-style: none;
-}
-
-.brand-ware> li:nth-child(2)>span {
-    display: inline-block;
-    position: relative;
-    width: 118px;
-    margin-top: -2px;
-    margin-left: 3px;
-    padding-left: 15px;
-    border: 1px solid #91999d;
-    border-radius: 11px;
     font-family: Lucida;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.icon-brand-bus {
-    position: absolute;
-    margin-top: 1px;
-    margin-left: -12px;
-}
-
-.style-brand-bus>p {
-    margin: 0;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    padding-left: 13px;
+.brand-ware p {
+    margin: 1px 0px 0px 0px;
 }
 
 .brand-bus {
-    height: 11px;
-    margin-top: 6px;
+    margin-top: 13px;
+    margin-left: 14px;
 }
 
-.brand-bus>li {
-    font-family: Lucida;
-    font-size: 12.73px;
+.brand-bus span::before {
+    width: 23px;
+    height: 23px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -95px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 3px
 }
 
-.bus-input {
-    height: 11px;
-}
-
-.brand-bus .bus-brand2 {
-    margin-top: 10px;
-}
-
-.brand-bus> .bus-brand {
-    margin-top: 8px;
-}
-
-.brand-bus>li:nth-child(1)>label {
-    margin-left: 8px;
-}
-
-.brand-bus>li:nth-child(2)>label {
-    position: absolute;
-    margin-top: 3px;
-    margin-left: 12px;
-}
-
-.brand-bus>li:nth-child(3)>label {
-    position: absolute;
-    margin-top: 2px;
-    margin-left: 12px;
-}
-
-.brand-ware> li:nth-child(3) {
-    margin-top: 69px;
-    margin-left: 21px;
-}
-
-.brand-ware> li:nth-child(3)>ul {
-    margin: 0;
-    margin-top: 6px;
-    margin-left: 11px;
-    padding: 0;
-    list-style: none;
-}
-
-.brand-ware> li:nth-child(3)>span {
+.brand-bus span {
     display: inline-block;
-    position: relative;
-    width: 118px;
-    margin-top: 0;
-    margin-left: 1px;
-    padding-left: 16px;
+    width: 133px;
     border: 1px solid #91999d;
-    border-radius: 11px;
+    border-radius: 13px;
     font-family: Lucida;
     font-size: 14px;
     text-transform: uppercase;
-}
-
-.brand-ware .icon-brand-disk {
-    position: absolute;
-    margin-top: 1px;
-    margin-left: -14px;
-}
-
-.style-brand-disk>p {
-    margin: 0;
-    padding-top: 3px;
     padding-bottom: 2px;
-    padding-left: 13px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+
+.brand-bus p {
+    margin: 3px 0 0 0;
+}
+
+.bus-input {
+    height: 10px;
+    margin-left: 11px;
+    margin-bottom: 11px;
+}
+
+.label-brand-bus {
+    margin-left: 8px;
+    font-family: Lucida;
+    font-size: 12.73px;
+    margin-top: -6px;
 }
 
 .brand-disk {
-    height: 11px;
     margin-top: 6px;
+    margin-left: 13px;
 }
 
-.brand-disk>li {
+.brand-disk span::before {
+    width: 23px;
+    height: 23px;
+    content: ".";
+    background: url('../img/sprite.png') no-repeat;
+    background-position: 0px -95px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 3px
+}
+
+.brand-disk span {
+    display: inline-block;
+    width: 136px;
+    border: 1px solid #91999d;
+    border-radius: 13px;
     font-family: Lucida;
-    font-size: 12.73px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    margin-left: 1px;
+    margin-bottom: 7px;
+}
+
+.brand-disk p {
+    margin: 3px 0 0 0;
 }
 
 .disk-input {
-    height: 11px;
+    height: 10px;
+    margin-left: 11px;
+    margin-bottom: 11px;
 }
 
-.brand-disk .disk-brand1 {
-    margin-top: 5px;
-}
-
-.brand-disk .disk-brand2 {
-    margin-top: 10px;
-}
-
-.brand-disk .disk-brand3 {
-    margin-top: 8px;
-}
-
-.brand-disk>li:nth-child(1)>label {
+.label-brand-disk {
     margin-left: 8px;
-}
-
-.brand-disk>li:nth-child(2)>label {
-    position: absolute;
-    margin-top: 3px;
-    margin-left: 12px;
-}
-
-.brand-disk>li:nth-child(3)>label {
-    position: absolute;
-    margin-top: 2px;
-    margin-left: 12px;
+    font-family: Lucida;
+    font-size: 12.73px;
+    margin-top: -6px;
 }
 
 .choose-brand .input-submit {
-    position: relative;
-    margin-top: 76px;
-    margin-left: 31px;
+    margin-top: 11px;
+    margin-left: 23px;
     padding: 5px 13px 6px;
     border-radius: 10px;
     background: #164e70;
@@ -959,140 +641,130 @@ main {
     text-transform: uppercase;
 }
 
-.main {
-    display: block;
-}
-
 .main::after {
+    content: ".";
     display: block;
     height: 0;
     clear: both;
-    content: '.';
-    overflow: hidden;
 }
 
 footer {
-    display: block;
-    position: absolute;
-    width: 925px;
+    width: 911px;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-left: 295px;
 }
 
 .brand-logo {
-    margin-bottom: 22px;
+    height: 25px;
+    margin-bottom: 46px;
+    margin-left: 118px;
 }
 
-.brand-logo>li {
-    display: inline-block;
-    list-style: none;
+.brand-logo li {
+    float: left;
+    background: url(../img/sprite-brand.png) no-repeat;
+    width: 95px;
+    height: 30px;
+    margin-top: 22px;
+    content: ".";
 }
 
-.brand-logo>li>img {
-    display: block;
+.brand-logo .toyotires {
+    background-position: 0px -263px;
 }
 
-.brand-logo>li:nth-child(2)>img {
-    margin-top: -22px;
-    margin-left: 7px;
+.brand-logo .bidgestore {
+    background-position: 0px -33px;
 }
 
-.brand-logo>li:nth-child(3)>img {
-    margin-top: -16px;
-    margin-left: 9px;
+.brand-logo .continental {
+    background-position: 0px -67px;
+    margin-left: 15px;
+    width: 92px;
 }
 
-.brand-logo>li:nth-child(4)>img {
-    margin-top: -23px;
-    margin-left: 11px;
+.brand-logo .cooper {
+    background-position: 0px -108px;
+    margin-top: 21px;
+    width: 72px;
 }
 
-.brand-logo>li:nth-child(5)>img {
-    margin-top: -21px;
-    margin-left: 7px;
+.brand-logo .avon {
+    background-position: 0px 0px;
+    margin-top: 23px;
+    width: 89px;
 }
 
-.brand-logo>li:nth-child(6)>img {
-    position: relative;
-    margin-top: 2px;
-    margin-left: 9px;
+.brand-logo .tire-factory {
+    background-position: 0px -216px;
+    margin-top: 18px;
+    width: 70px;
 }
 
-.brand-logo>li:nth-child(7)>img {
-    margin-top: -21px;
-    margin-left: 8px;
+.brand-logo .pirell {
+    background-position: 0px -182px;
+    width: 77px;
 }
 
-.brand-logo>li:nth-child(8)>img {
-    position: relative;
-    margin-top: -21px;
-    margin-left: 11px;
+.brand-logo .dunlop {
+    background-position: 0px -149px;
+    margin-top: 21px;
 }
-
+                
 .info-company {
-    width: 909px;
-    height: auto;
-    margin-left: -76px;
-    background: -webkit-linear-gradient(top, rgba(211, 213, 217, 1) 0%, rgba(33, 58, 77, 1) 0%, rgba(33, 58, 77, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(top bottom, rgba(211, 213, 217, 1) 0%, rgba(33, 58, 77, 1) 0%, rgba(33, 58, 77, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 911px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(top, rgba(211, 213, 217, 1) 0%, rgba(33, 58, 77, 1) 0%, rgba(33, 58, 77, 1) 100%); 
+    padding-bottom: 52px;
 }
 
 .foot {
+    margin-left: 308px;
     margin-bottom: 13px;
-    padding: 8px 20px 0 306px;
+    padding: 7px 20px 0 0px;
+    width: 302px;
 }
 
-.foot>li {
+.foot li {
     display: inline-block;
-    position: relative;
-    list-style: none;
 }
 
-.foot>li>a {
-    display: block;
-    padding: 0;
-    border-left: 1px solid #7f8e97;
+.foot li a {
     color: #bec6c9;
     font-family: Arial;
     font-size: 12px;
-    text-decoration: none;
+    letter-spacing: .25px;
+    border-left: 1px solid #7f8e97;
 }
 
-.foot>li:nth-child(1)>a {
+.foot .about-company {
     padding-right: 7px;
     padding-left: 2px;
     border-left: 0;
-    letter-spacing: .25px;
 }
 
-.foot>li:nth-child(2)>a {
+.foot .foot-delivery {
     padding-top: 4px;
     padding-right: 7px;
-    padding-left: 13px;
-    letter-spacing: .25px;
+    padding-left: 13px; 
 }
 
-.foot>li:nth-child(3)>a {
+.foot .foot-articles {
     padding-right: 9px;
     padding-left: 13px;
-    letter-spacing: .25px;
 }
 
-.foot>li:nth-child(4)>a {
+.foot .foot-contacts {
     padding-left: 16px;
-    letter-spacing: .25px;
 }
 
-.info-company>span {
-    display: block;
-    margin-top: 0;
-    padding: 0 0 51px 376px;
+.info-company p {
+    margin-left: 378px;
     color: #7f4740;
     font-family: Arial;
     font-size: 10px;
-    letter-spacing: 0;
 }
 
-.foot>li>a:focus {
+.foot a:focus {
     color: #52abcb;
 }
